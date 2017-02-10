@@ -1,0 +1,36 @@
+*{
+	font-family: sans-serif;
+}
+#container{
+	margin-left: 30px;
+	margin-top: 40px;
+	width: 900px;
+}
+#newAppointment{
+	margin-left: 30px;
+	margin-top: 40px;
+	width: 500px;
+}
+
+.btn-info {
+    color: #fff;
+    background-color: #9c27b0;
+    border-color: #9c27b0;
+}
+.btn-info:hover {
+	color: #fff;
+	background-color: ##6d057f;
+	border-color: ##6d057f;
+}
+
+.btn-warning {
+    color: #fff;
+    background-color: #F44336;
+    border-color: #F44336;
+}
+
+.btn-warning:hover {
+    color: #fff;
+    background-color: ##ec1000;
+    border-color: ##ec1000;
+}
