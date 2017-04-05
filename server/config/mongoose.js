@@ -2,7 +2,8 @@ var mongoose = require('mongoose');
 
 var fs = require('fs');
 
-mongoose.connect('mongodb://localhost/BlackBelt');
+// mongoose.connect('mongodb://localhost/BlackBelt');
+mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/BlackBelt');
 
 var models_path = __dirname + '/../models'
 

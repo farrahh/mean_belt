@@ -5,7 +5,9 @@ var express = require("express");
 
 var app = express();
 var bodyParser = require("body-parser");
-app.use(bodyParser.json({ extended: true }));
+// app.use(bodyParser.json({ extended: true }));
+app.use(bodyparser.json({limit:'50mb'}));
+app.use(bodyparser.urlencoded({limit: '50mb', extended: true}));
 require('./server/config/mongoose.js');
 require('./server/config/routes.js')(app);
 
